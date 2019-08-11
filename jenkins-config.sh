@@ -1,9 +1,9 @@
-app_tag=`git ls-remote https://github.com/javahometech/node-app HEAD | awk '{print $1}'`
+app_tag=`git ls-remote https://github.com/Sunilgit85/node-app HEAD | awk '{print $1}'`
 
-docker_app="kammana/nodejenkins:$app_tag"
+docker_app="sunildockerr/nodejenkins:$app_tag"
 docker build -t $docker_app .
 
-docker login -u kammana -p yourpassword 
+docker login -u sunildockerr -p Linus@006 
 
 docker push $docker_app
 
